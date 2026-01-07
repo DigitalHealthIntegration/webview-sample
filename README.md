@@ -70,13 +70,13 @@ The specific route /finish-session signals the end of the user workflow. The nat
 The system uses a synchronized start/stop mechanism across connected devices.
 ### 1. Start Recording
 * *Method:* POST
-* *Behavior:*
+*Behavior:*
 * Accepts a user ID or session identifier.
 * *UUID Generation:* To ensure file uniqueness and prevent overwriting, the backend automatically appends a random UUID to the provided identifier.
 * *Locking:* Creates a lock file (e.g., .lock.android) to prevent concurrent recording requests.
 ### 2. Stop Recording
 * *Method:* POST
-* *Behavior:*
+*Behavior:*
 * Stops the camera pipelines safely.
 * *Keepalive:* Browser safety protocols use fetch with keepalive: true to ensure stop commands are sent even if the WebView is closed immediately.
 * *Cleanup:* Removes lock files upon successful stop.
