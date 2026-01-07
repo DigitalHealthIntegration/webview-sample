@@ -105,7 +105,7 @@ text
 ### Folder Structure
 - UserID
   - date
-  - camera_namera
+  - camera_name
     - encrypted_files
     - raw_files
     - calibration files
