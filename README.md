@@ -102,6 +102,13 @@ text
 2. *Transmission:* This hash is sent to the Upload Service alongside the file metadata before the upload begins.
 3. *Verification:* After the file is uploaded, the Upload Service recalculates the hash of the received file and compares it against the provided hash to confirm that no data corruption occurred during transfer.
 ---
+### Folder Structure
+- UserID
+  - date
+  - camera_namera
+    - encrypted_files
+    - raw_files
+    - calibration files
 
 ### Webview Demo
 
