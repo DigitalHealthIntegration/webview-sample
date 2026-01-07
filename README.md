@@ -6,7 +6,7 @@ This Android application serves as a lightweight native wrapper for the Orin Cam
 
 ## Purpose
 
-This app acts as the mobile host for the Orin WebView-based workflow described in the [Orin API & Integration Documentation](https://www.google.com/search?q=%23). It **does not** implement recording logic, file handling, or backend communication directly; it delegates these tasks to the web application running within the WebView.
+This app acts as the mobile host for the Orin WebView-based workflow. It **does not** implement recording logic, file handling, or backend communication directly; it delegates these tasks to the web application running within the WebView.
 
 ## Core Responsibilities
 
