@@ -6,6 +6,15 @@
     android:layout_height="match_parent">
 
     <EditText
+        android:id="@+id/ipAddressInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter IP (e.g., 192.168.1.5)"
+        android:inputType="text"
+        android:text="10.102.10.193"
+    android:layout_marginHorizontal="16dp" />
+
+    <EditText
         android:id="@+id/userIdInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
