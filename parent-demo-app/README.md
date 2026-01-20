@@ -84,18 +84,6 @@ You should see **the same Parent Demo UI**, now running inside Docker.
 
 ---
 
-## Step 4 — Test iframe inside Docker
-
-If you have `public/setup.html`, set:
-
-```
-Camera App URL = http://localhost:8080/setup.html
-```
-
-Then launch the session — it should work the same as locally.
-
----
-
 # 🐙 Docker Compose (Optional but Recommended)
 
 Instead of manually building and running the container, you can use Docker Compose.
