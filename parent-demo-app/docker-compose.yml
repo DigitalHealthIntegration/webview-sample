@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  parent-demo:
+    build: .
+    container_name: parent-demo-container
+    ports:
+      - "8080:80"
+    restart: always
