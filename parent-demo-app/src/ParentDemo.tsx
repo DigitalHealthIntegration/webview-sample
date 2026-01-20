@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import logo from './assets/IPRD Solutions grey logo-29.avif';
 
 // Define the shape of the data we expect from the child app
 // We define this locally to simulate an external application that doesn't share code
@@ -18,8 +19,8 @@ export const ParentDemo: React.FC = () => {
   const [userId, setUserId] = useState<string>("");
   
 //   const [aggregatorUrl, setAggregatorUrl] = useState<string>(window.location.origin + "/setup"); 
-  const aggregatorUrl = "http://localhost:4173/setup"
-  
+  const [aggregatorUrl, setAggregatorUrl] = useState<string>("http://localhost:4173/setup")
+
   // State to manage the session lifecycle
   const [isSessionActive, setIsSessionActive] = useState<boolean>(false);
   const [lastSessionData, setLastSessionData] = useState<SessionData | null>(null);
@@ -147,6 +148,7 @@ export const ParentDemo: React.FC = () => {
           </div>
         )}
       </main>
+      <img src={logo} alt="Logo" style={{ position: 'absolute', top: '15px', right: '50px', width: '150px' }} />
     </div>
   );
 };
