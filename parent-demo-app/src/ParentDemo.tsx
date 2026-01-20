@@ -17,7 +17,8 @@ export const ParentDemo: React.FC = () => {
   // State for the input form
   const [userId, setUserId] = useState<string>("");
   
-  const [aggregatorUrl, setAggregatorUrl] = useState<string>(window.location.origin + "/setup"); 
+//   const [aggregatorUrl, setAggregatorUrl] = useState<string>(window.location.origin + "/setup"); 
+  const aggregatorUrl = "http://localhost:4173/setup"
   
   // State to manage the session lifecycle
   const [isSessionActive, setIsSessionActive] = useState<boolean>(false);
